@@ -1,0 +1,32 @@
+MainPrgm test_programme_;
+Var
+    ma_variable: Int;
+    autre__variable: Float;
+    tableau: Int; 10];
+@define Const PI: Float = 3.14159;
+BeginPg
+    ma_variable := 123;
+    autre_variable := 2.718;
+    tableau[0] := ma_variable;
+    if (ma_variable > 100) then
+        BeginPg
+            output("Variable > 100", ma_variable);
+        EndPg
+    else
+        BeginPg
+            output("Variable <= 100", ma_variable);
+        EndPg
+    for i from 0 to 9 step 1 BeginPg
+        tableau[i] := i * 2;
+    EndPg
+    while (ma_variable != 0 do
+        BeginPg
+            ma_variable := ma_variable / 2;
+        EndPg
+    input(ma_variable);
+    <!- commentaire une ligne -!>
+    {--
+        commentaire
+        multi-lignes
+    --}
+EndPg;
